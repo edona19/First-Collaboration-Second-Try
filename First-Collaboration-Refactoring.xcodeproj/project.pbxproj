@@ -45,6 +45,8 @@
 		035340422BF98A4900DF924D /* LocationWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340412BF98A4900DF924D /* LocationWeatherModel.swift */; };
 		035340452BF98AB400DF924D /* BarbareDoesNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 035340442BF98AB400DF924D /* BarbareDoesNetworking */; };
 		035340482BF98FA800DF924D /* SolarDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340472BF98FA800DF924D /* SolarDataCell.swift */; };
+		78E439F42BF996C800E0D36C /* AirQualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E439F32BF996C800E0D36C /* AirQualityModel.swift */; };
+		78E439F62BF996ED00E0D36C /* TextResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E439F52BF996ED00E0D36C /* TextResources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		0353403F2BF98A3E00DF924D /* CityDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataModel.swift; sourceTree = "<group>"; };
 		035340412BF98A4900DF924D /* LocationWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherModel.swift; sourceTree = "<group>"; };
 		035340472BF98FA800DF924D /* SolarDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarDataCell.swift; sourceTree = "<group>"; };
+		78E439F32BF996C800E0D36C /* AirQualityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityModel.swift; sourceTree = "<group>"; };
+		78E439F52BF996ED00E0D36C /* TextResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextResources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,7 +199,7 @@
 		03533FFA2BF9873300DF924D /* AirQuality */ = {
 			isa = PBXGroup;
 			children = (
-				035340032BF9882C00DF924D /* Models */,
+				78E439F22BF9966900E0D36C /* Models */,
 				03533FFF2BF9881700DF924D /* AirQualityViewController.swift */,
 				035340012BF9882300DF924D /* AirQualityViewModel.swift */,
 			);
@@ -253,13 +257,6 @@
 				0353402B2BF9899B00DF924D /* WeatherViewModel.swift */,
 			);
 			path = Weather;
-			sourceTree = "<group>";
-		};
-		035340032BF9882C00DF924D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		0353400C2BF9887A00DF924D /* Views */ = {
@@ -328,6 +325,15 @@
 				035340472BF98FA800DF924D /* SolarDataCell.swift */,
 			);
 			path = ExpandableTable;
+			sourceTree = "<group>";
+		};
+		78E439F22BF9966900E0D36C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78E439F32BF996C800E0D36C /* AirQualityModel.swift */,
+				78E439F52BF996ED00E0D36C /* TextResources.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,8 +442,10 @@
 				0353402C2BF9899B00DF924D /* WeatherViewModel.swift in Sources */,
 				035340402BF98A3E00DF924D /* CityDataModel.swift in Sources */,
 				035340262BF9896800DF924D /* SpecieTableViewCell.swift in Sources */,
+				78E439F42BF996C800E0D36C /* AirQualityModel.swift in Sources */,
 				035340102BF988A700DF924D /* CustomCardModel.swift in Sources */,
 				035340342BF989E800DF924D /* UiImageViewExtension.swift in Sources */,
+				78E439F62BF996ED00E0D36C /* TextResources.swift in Sources */,
 				035340072BF9886400DF924D /* PopulationNetworkService.swift in Sources */,
 				0353403A2BF98A1C00DF924D /* InfoView.swift in Sources */,
 				035340142BF988C800DF924D /* SolarResourceData.swift in Sources */,
