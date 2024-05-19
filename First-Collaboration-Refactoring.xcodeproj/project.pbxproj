@@ -46,6 +46,8 @@
 		035340452BF98AB400DF924D /* BarbareDoesNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 035340442BF98AB400DF924D /* BarbareDoesNetworking */; };
 		035340482BF98FA800DF924D /* SolarDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340472BF98FA800DF924D /* SolarDataCell.swift */; };
 		BC7DD0242BF996C700749C41 /* LongLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DD0232BF996C700749C41 /* LongLayoutView.swift */; };
+		78E439F42BF996C800E0D36C /* AirQualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E439F32BF996C800E0D36C /* AirQualityModel.swift */; };
+		78E439F62BF996ED00E0D36C /* TextResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E439F52BF996ED00E0D36C /* TextResources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,8 @@
 		035340412BF98A4900DF924D /* LocationWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherModel.swift; sourceTree = "<group>"; };
 		035340472BF98FA800DF924D /* SolarDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarDataCell.swift; sourceTree = "<group>"; };
 		BC7DD0232BF996C700749C41 /* LongLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLayoutView.swift; sourceTree = "<group>"; };
+		78E439F32BF996C800E0D36C /* AirQualityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityModel.swift; sourceTree = "<group>"; };
+		78E439F52BF996ED00E0D36C /* TextResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextResources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +201,7 @@
 		03533FFA2BF9873300DF924D /* AirQuality */ = {
 			isa = PBXGroup;
 			children = (
-				035340032BF9882C00DF924D /* Models */,
+				78E439F22BF9966900E0D36C /* Models */,
 				03533FFF2BF9881700DF924D /* AirQualityViewController.swift */,
 				035340012BF9882300DF924D /* AirQualityViewModel.swift */,
 			);
@@ -236,10 +240,10 @@
 			children = (
 				035340242BF9893E00DF924D /* SpecieCell */,
 				035340232BF9893800DF924D /* Model */,
-				0353401B2BF9890200DF924D /* ExtensionOfImage.swift */,
-				0353401D2BF9891A00DF924D /* ExtensionOfTableView.swift */,
 				0353401F2BF9892B00DF924D /* SpecieViewController.swift */,
+				0353401B2BF9890200DF924D /* ExtensionOfImage.swift */,
 				035340212BF9893400DF924D /* SpecieViewModel.swift */,
+				0353401D2BF9891A00DF924D /* ExtensionOfTableView.swift */,
 			);
 			path = Specie;
 			sourceTree = "<group>";
@@ -262,6 +266,13 @@
 			children = (
 			);
 			path = Models;
+		};
+		0353400C2BF9887A00DF924D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+		};
 			sourceTree = "<group>";
 		};
 		035340232BF9893800DF924D /* Model */ = {
@@ -331,6 +342,15 @@
 				BC7DD0232BF996C700749C41 /* LongLayoutView.swift */,
 			);
 			path = Views;
+		};
+		78E439F22BF9966900E0D36C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78E439F32BF996C800E0D36C /* AirQualityModel.swift */,
+				78E439F52BF996ED00E0D36C /* TextResources.swift */,
+			);
+			path = Models;
+		};
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,8 +460,10 @@
 				0353402C2BF9899B00DF924D /* WeatherViewModel.swift in Sources */,
 				035340402BF98A3E00DF924D /* CityDataModel.swift in Sources */,
 				035340262BF9896800DF924D /* SpecieTableViewCell.swift in Sources */,
+				78E439F42BF996C800E0D36C /* AirQualityModel.swift in Sources */,
 				035340102BF988A700DF924D /* CustomCardModel.swift in Sources */,
 				035340342BF989E800DF924D /* UiImageViewExtension.swift in Sources */,
+				78E439F62BF996ED00E0D36C /* TextResources.swift in Sources */,
 				035340072BF9886400DF924D /* PopulationNetworkService.swift in Sources */,
 				0353403A2BF98A1C00DF924D /* InfoView.swift in Sources */,
 				035340142BF988C800DF924D /* SolarResourceData.swift in Sources */,
