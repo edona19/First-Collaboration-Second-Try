@@ -44,6 +44,7 @@
 		035340402BF98A3E00DF924D /* CityDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353403F2BF98A3E00DF924D /* CityDataModel.swift */; };
 		035340422BF98A4900DF924D /* LocationWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340412BF98A4900DF924D /* LocationWeatherModel.swift */; };
 		035340452BF98AB400DF924D /* BarbareDoesNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 035340442BF98AB400DF924D /* BarbareDoesNetworking */; };
+		035340482BF98FA800DF924D /* SolarDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340472BF98FA800DF924D /* SolarDataCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		0353403D2BF98A3000DF924D /* WindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindView.swift; sourceTree = "<group>"; };
 		0353403F2BF98A3E00DF924D /* CityDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataModel.swift; sourceTree = "<group>"; };
 		035340412BF98A4900DF924D /* LocationWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherModel.swift; sourceTree = "<group>"; };
+		035340472BF98FA800DF924D /* SolarDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarDataCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 		03533FFC2BF9875400DF924D /* SolarResource */ = {
 			isa = PBXGroup;
 			children = (
+				035340462BF98F8F00DF924D /* ExpandableTable */,
 				0353400D2BF9889E00DF924D /* CustomCardCell.swift */,
 				0353400F2BF988A700DF924D /* CustomCardModel.swift */,
 				035340112BF988B800DF924D /* IconEnums.swift */,
@@ -319,6 +322,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		035340462BF98F8F00DF924D /* ExpandableTable */ = {
+			isa = PBXGroup;
+			children = (
+				035340472BF98FA800DF924D /* SolarDataCell.swift */,
+			);
+			path = ExpandableTable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +416,7 @@
 				035340202BF9892B00DF924D /* SpecieViewController.swift in Sources */,
 				035340382BF98A1400DF924D /* ArrowView.swift in Sources */,
 				035340222BF9893400DF924D /* SpecieViewModel.swift in Sources */,
+				035340482BF98FA800DF924D /* SolarDataCell.swift in Sources */,
 				03533FF92BF9871000DF924D /* CustomButton.swift in Sources */,
 				035340022BF9882300DF924D /* AirQualityViewModel.swift in Sources */,
 				0353401A2BF988E500DF924D /* SolarResourceViewModel.swift in Sources */,
