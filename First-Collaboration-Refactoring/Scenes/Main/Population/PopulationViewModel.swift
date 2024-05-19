@@ -13,24 +13,14 @@ protocol PopulationViewModelDelegate: AnyObject {
 }
 
 class PopulationViewModel {
-    
-    
     // MARK: - Variables
-    private let populationService: PopulationService
     var todayPopulationText: String?
     var tomorrowPopulationText: String?
     var errorMessage: ((String) -> Void)?
     private let networkService = NetworkService()
     weak var delegate: PopulationViewModelDelegate?
     
-    // MARK: - Initialiser
-    
-    init(populationService: PopulationService = PopulationService()) {
-        self.populationService = populationService
-    }
-    // MARK: - Helper Functions
-    
-    
+    // MARK: - Helper Functions    
     func fetchCountryWeatherData(country: String){
         
         
@@ -43,7 +33,6 @@ class PopulationViewModel {
         }) { [weak self] result in
             switch result {
             case .success(let weatherData):
-                print(weatherData)
                 guard let weatherData = weatherData else { return }
                 self?.todayPopulationText = ("\(weatherData.total_population[0].population)")
                 self?.tomorrowPopulationText = ("\(weatherData.total_population[1].population)")
