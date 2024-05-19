@@ -6,3 +6,21 @@
 //
 
 import Foundation
+
+class SpecieViewModel {
+    // MARK: - Selectors
+    
+    
+    // MARK: - Variables
+    
+    
+    // MARK: - Initialiser
+    
+    
+    // MARK: - Helper Functions
+    
+    
+    // MARK: - Computed Properties
+    
+    
+}

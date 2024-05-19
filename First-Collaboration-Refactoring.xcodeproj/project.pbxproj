@@ -234,10 +234,10 @@
 			children = (
 				035340242BF9893E00DF924D /* SpecieCell */,
 				035340232BF9893800DF924D /* Model */,
-				0353401B2BF9890200DF924D /* ExtensionOfImage.swift */,
-				0353401D2BF9891A00DF924D /* ExtensionOfTableView.swift */,
 				0353401F2BF9892B00DF924D /* SpecieViewController.swift */,
+				0353401B2BF9890200DF924D /* ExtensionOfImage.swift */,
 				035340212BF9893400DF924D /* SpecieViewModel.swift */,
+				0353401D2BF9891A00DF924D /* ExtensionOfTableView.swift */,
 			);
 			path = Specie;
 			sourceTree = "<group>";
