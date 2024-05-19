@@ -27,7 +27,6 @@
 		035340182BF988DC00DF924D /* SolarModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340172BF988DC00DF924D /* SolarModelViewController.swift */; };
 		0353401A2BF988E500DF924D /* SolarResourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340192BF988E500DF924D /* SolarResourceViewModel.swift */; };
 		0353401C2BF9890200DF924D /* ExtensionOfImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353401B2BF9890200DF924D /* ExtensionOfImage.swift */; };
-		0353401E2BF9891A00DF924D /* ExtensionOfTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353401D2BF9891A00DF924D /* ExtensionOfTableView.swift */; };
 		035340202BF9892B00DF924D /* SpecieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353401F2BF9892B00DF924D /* SpecieViewController.swift */; };
 		035340222BF9893400DF924D /* SpecieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340212BF9893400DF924D /* SpecieViewModel.swift */; };
 		035340262BF9896800DF924D /* SpecieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340252BF9896800DF924D /* SpecieTableViewCell.swift */; };
@@ -44,6 +43,10 @@
 		035340402BF98A3E00DF924D /* CityDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353403F2BF98A3E00DF924D /* CityDataModel.swift */; };
 		035340422BF98A4900DF924D /* LocationWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340412BF98A4900DF924D /* LocationWeatherModel.swift */; };
 		035340452BF98AB400DF924D /* BarbareDoesNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 035340442BF98AB400DF924D /* BarbareDoesNetworking */; };
+		035340482BF98FA800DF924D /* SolarDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340472BF98FA800DF924D /* SolarDataCell.swift */; };
+		0353404D2BF9A38B00DF924D /* CustomLongLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353404C2BF9A38B00DF924D /* CustomLongLayoutView.swift */; };
+		78E439F42BF996C800E0D36C /* AirQualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E439F32BF996C800E0D36C /* AirQualityModel.swift */; };
+		78E439F62BF996ED00E0D36C /* TextResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E439F52BF996ED00E0D36C /* TextResources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +72,6 @@
 		035340172BF988DC00DF924D /* SolarModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarModelViewController.swift; sourceTree = "<group>"; };
 		035340192BF988E500DF924D /* SolarResourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarResourceViewModel.swift; sourceTree = "<group>"; };
 		0353401B2BF9890200DF924D /* ExtensionOfImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionOfImage.swift; sourceTree = "<group>"; };
-		0353401D2BF9891A00DF924D /* ExtensionOfTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionOfTableView.swift; sourceTree = "<group>"; };
 		0353401F2BF9892B00DF924D /* SpecieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecieViewController.swift; sourceTree = "<group>"; };
 		035340212BF9893400DF924D /* SpecieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecieViewModel.swift; sourceTree = "<group>"; };
 		035340252BF9896800DF924D /* SpecieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecieTableViewCell.swift; sourceTree = "<group>"; };
@@ -85,6 +87,10 @@
 		0353403D2BF98A3000DF924D /* WindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindView.swift; sourceTree = "<group>"; };
 		0353403F2BF98A3E00DF924D /* CityDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataModel.swift; sourceTree = "<group>"; };
 		035340412BF98A4900DF924D /* LocationWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherModel.swift; sourceTree = "<group>"; };
+		035340472BF98FA800DF924D /* SolarDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarDataCell.swift; sourceTree = "<group>"; };
+		0353404C2BF9A38B00DF924D /* CustomLongLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLongLayoutView.swift; sourceTree = "<group>"; };
+		78E439F32BF996C800E0D36C /* AirQualityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityModel.swift; sourceTree = "<group>"; };
+		78E439F52BF996ED00E0D36C /* TextResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextResources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +191,8 @@
 		03533FF72BF986F800DF924D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				03533FF82BF9871000DF924D /* CustomButton.swift */,
+				0353404F2BF9A50900DF924D /* Enums */,
+				035340502BF9A50F00DF924D /* ReusableElements */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -193,7 +200,7 @@
 		03533FFA2BF9873300DF924D /* AirQuality */ = {
 			isa = PBXGroup;
 			children = (
-				035340032BF9882C00DF924D /* Models */,
+				78E439F22BF9966900E0D36C /* Models */,
 				03533FFF2BF9881700DF924D /* AirQualityViewController.swift */,
 				035340012BF9882300DF924D /* AirQualityViewModel.swift */,
 			);
@@ -203,7 +210,7 @@
 		03533FFB2BF9874700DF924D /* Population */ = {
 			isa = PBXGroup;
 			children = (
-				0353400C2BF9887A00DF924D /* Views */,
+				0353404B2BF9A34C00DF924D /* PopulationCustomView */,
 				035340042BF9885200DF924D /* PopulationModel.swift */,
 				035340062BF9886400DF924D /* PopulationNetworkService.swift */,
 				035340082BF9886E00DF924D /* PopulationViewController.swift */,
@@ -215,9 +222,8 @@
 		03533FFC2BF9875400DF924D /* SolarResource */ = {
 			isa = PBXGroup;
 			children = (
-				0353400D2BF9889E00DF924D /* CustomCardCell.swift */,
-				0353400F2BF988A700DF924D /* CustomCardModel.swift */,
-				035340112BF988B800DF924D /* IconEnums.swift */,
+				035340462BF98F8F00DF924D /* ExpandableTable */,
+				0353404E2BF9A4F600DF924D /* CustomCard */,
 				035340132BF988C800DF924D /* SolarResourceData.swift */,
 				035340152BF988D100DF924D /* SolarResourceModel.swift */,
 				035340172BF988DC00DF924D /* SolarModelViewController.swift */,
@@ -231,9 +237,8 @@
 			children = (
 				035340242BF9893E00DF924D /* SpecieCell */,
 				035340232BF9893800DF924D /* Model */,
-				0353401B2BF9890200DF924D /* ExtensionOfImage.swift */,
-				0353401D2BF9891A00DF924D /* ExtensionOfTableView.swift */,
 				0353401F2BF9892B00DF924D /* SpecieViewController.swift */,
+				0353401B2BF9890200DF924D /* ExtensionOfImage.swift */,
 				035340212BF9893400DF924D /* SpecieViewModel.swift */,
 			);
 			path = Specie;
@@ -250,20 +255,6 @@
 				0353402B2BF9899B00DF924D /* WeatherViewModel.swift */,
 			);
 			path = Weather;
-			sourceTree = "<group>";
-		};
-		035340032BF9882C00DF924D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		0353400C2BF9887A00DF924D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		035340232BF9893800DF924D /* Model */ = {
@@ -317,6 +308,56 @@
 				0353403D2BF98A3000DF924D /* WindView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		035340462BF98F8F00DF924D /* ExpandableTable */ = {
+			isa = PBXGroup;
+			children = (
+				035340472BF98FA800DF924D /* SolarDataCell.swift */,
+			);
+			path = ExpandableTable;
+			sourceTree = "<group>";
+		};
+		0353404B2BF9A34C00DF924D /* PopulationCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0353404C2BF9A38B00DF924D /* CustomLongLayoutView.swift */,
+			);
+			path = PopulationCustomView;
+			sourceTree = "<group>";
+		};
+		0353404E2BF9A4F600DF924D /* CustomCard */ = {
+			isa = PBXGroup;
+			children = (
+				0353400D2BF9889E00DF924D /* CustomCardCell.swift */,
+				0353400F2BF988A700DF924D /* CustomCardModel.swift */,
+			);
+			path = CustomCard;
+			sourceTree = "<group>";
+		};
+		0353404F2BF9A50900DF924D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				035340112BF988B800DF924D /* IconEnums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		035340502BF9A50F00DF924D /* ReusableElements */ = {
+			isa = PBXGroup;
+			children = (
+				03533FF82BF9871000DF924D /* CustomButton.swift */,
+			);
+			path = ReusableElements;
+			sourceTree = "<group>";
+		};
+		78E439F22BF9966900E0D36C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78E439F32BF996C800E0D36C /* AirQualityModel.swift */,
+				78E439F52BF996ED00E0D36C /* TextResources.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,11 +441,12 @@
 				03533FDC2BF9850000DF924D /* AppDelegate.swift in Sources */,
 				035340162BF988D100DF924D /* SolarResourceModel.swift in Sources */,
 				035340322BF989C900DF924D /* WeatherCell.swift in Sources */,
+				0353404D2BF9A38B00DF924D /* CustomLongLayoutView.swift in Sources */,
 				0353403C2BF98A2300DF924D /* TitleView.swift in Sources */,
-				0353401E2BF9891A00DF924D /* ExtensionOfTableView.swift in Sources */,
 				035340202BF9892B00DF924D /* SpecieViewController.swift in Sources */,
 				035340382BF98A1400DF924D /* ArrowView.swift in Sources */,
 				035340222BF9893400DF924D /* SpecieViewModel.swift in Sources */,
+				035340482BF98FA800DF924D /* SolarDataCell.swift in Sources */,
 				03533FF92BF9871000DF924D /* CustomButton.swift in Sources */,
 				035340022BF9882300DF924D /* AirQualityViewModel.swift in Sources */,
 				0353401A2BF988E500DF924D /* SolarResourceViewModel.swift in Sources */,
@@ -424,8 +466,10 @@
 				0353402C2BF9899B00DF924D /* WeatherViewModel.swift in Sources */,
 				035340402BF98A3E00DF924D /* CityDataModel.swift in Sources */,
 				035340262BF9896800DF924D /* SpecieTableViewCell.swift in Sources */,
+				78E439F42BF996C800E0D36C /* AirQualityModel.swift in Sources */,
 				035340102BF988A700DF924D /* CustomCardModel.swift in Sources */,
 				035340342BF989E800DF924D /* UiImageViewExtension.swift in Sources */,
+				78E439F62BF996ED00E0D36C /* TextResources.swift in Sources */,
 				035340072BF9886400DF924D /* PopulationNetworkService.swift in Sources */,
 				0353403A2BF98A1C00DF924D /* InfoView.swift in Sources */,
 				035340142BF988C800DF924D /* SolarResourceData.swift in Sources */,
