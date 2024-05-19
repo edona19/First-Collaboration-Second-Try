@@ -40,8 +40,7 @@ class AirQualityViewController: UIViewController {
         textField.leftViewMode = .always
         textField.autocorrectionType = .no
         textField.backgroundColor = .systemBackground
-        textField.layer.borderColor = UIColor.black.cgColor
-        textField.placeholder = "City name"
+        textField.placeholder = "Enter city"
         return textField
     }()
 

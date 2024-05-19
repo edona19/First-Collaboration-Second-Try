@@ -104,10 +104,14 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func setupCountryTextField() {
-        countryTextField.borderStyle = .roundedRect
         countryTextField.placeholder = "Enter a city"
         countryTextField.returnKeyType = .go
         countryTextField.translatesAutoresizingMaskIntoConstraints = false
+        countryTextField.layer.cornerRadius = 10
+        countryTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 14, height: countryTextField.frame.height))
+        countryTextField.leftViewMode = .always
+        countryTextField.backgroundColor = .systemBackground
+
         
         contentView.addSubview(countryTextField)
         

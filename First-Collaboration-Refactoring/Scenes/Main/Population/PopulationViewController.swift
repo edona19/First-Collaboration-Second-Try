@@ -70,7 +70,7 @@ class PopulationViewController: UIViewController {
         // Layout constraints
         NSLayoutConstraint.activate([
             populationTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            populationTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
+            populationTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
             populationTextField.heightAnchor.constraint(equalToConstant: 50),
             populationTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             populationTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),

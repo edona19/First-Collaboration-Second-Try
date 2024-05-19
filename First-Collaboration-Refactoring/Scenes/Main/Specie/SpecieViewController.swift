@@ -11,8 +11,6 @@ import BarbareDoesNetworking
 class SpecieViewController: UIViewController{
     // MARK: - Variables
     var viewModel: SpecieViewModel
-    let networkService = NetworkService()
-    var observations: [Observation] = []
     
     // MARK: - UI Components
     
@@ -30,16 +28,14 @@ class SpecieViewController: UIViewController{
     var cityNameTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Enter a city"
-        textField.borderStyle = .roundedRect
         textField.layer.cornerRadius = 10
         textField.layer.masksToBounds = true
         textField.returnKeyType = .go
         textField.leftViewMode = .always
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 14, height: textField.frame.height))
         textField.translatesAutoresizingMaskIntoConstraints = false
-        let imageView = UIImageView(image: UIImage(systemName: "globe.europe.africa.fill"))
-        imageView.tintColor = .systemGray5
-        textField.leftView = imageView
         textField.leftViewMode = .always
+        textField.backgroundColor = .systemBackground
         return textField
     }()
 
@@ -85,6 +81,7 @@ class SpecieViewController: UIViewController{
         testActions()
         tableViewOfInformation.dataSource = self
         tableViewOfInformation.delegate = self
+        viewModel.delegate = self
     }
     
     init(viewModel: SpecieViewModel) {
@@ -139,72 +136,31 @@ class SpecieViewController: UIViewController{
         ])
     }
     
-    // MARK: - Helper Functions
-    func setupData() {
-        
-    }
-    
     // MARK: - Action
     func testActions() {
-        searchButton.addTarget(self, action: #selector(searchButtonTapped), for: .touchUpInside)
+        searchButton.addAction(UIAction(handler: { _ in
+            self.searchButtonTapped()
+        }), for: .touchUpInside)
     }
 
-    @objc func searchButtonTapped() {
+    func searchButtonTapped() {
         guard let cityName = cityNameTextField.text, !cityName.isEmpty else {
             cityIdLabel.text = "Please enter a city name"
             return
         }
-        fetchCountryCoordinates(city: cityName)
+        viewModel.fetchCountryCoordinates(city: cityName)
     }
-
-    func fetchCountryCoordinates(city: String) {
-        guard let url = URL(string: "https://api.inaturalist.org/v1/places/autocomplete?q=\(city)") else {
-            fatalError("Invalid URL")
-        }
-
-        networkService.fetch(url: url, parse: { data -> AutocompleteResponse? in
-            return try? JSONDecoder().decode(AutocompleteResponse.self, from: data)
-        }) { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let cityData):
-                    self?.cityIdLabel.text = "City: \(city)"
-                    self?.fetchCountryData(cityID: cityData?.results.first?.id ?? 0)
-                case .failure(let error):
-                    print("Error fetching city ID:", error)
-                }
-            }
-        }
+    
+    func updateUI() {
+        tableViewOfInformation.reloadData()
+        self.cityIdLabel.text = "City: \(viewModel.getCityData())"
     }
+}
 
-
-    func fetchCountryData(cityID: Int) {
-        guard let url = URL(string: "https://api.inaturalist.org/v1/observations/species_counts?place_id=\(cityID)") else {
-            fatalError("Invalid URL")
-        }
-
-        networkService.fetch(url: url, parse: { data -> SpeciesCountsResponse? in
-            do {
-                let speciesData = try JSONDecoder().decode(SpeciesCountsResponse.self, from: data)
-                return speciesData
-            } catch {
-                print("Error decoding species counts data:", error)
-                return nil
-            }
-        }) { [weak self] result in
-            switch result {
-            case .success(let speciesData):
-                if let observations = speciesData?.results {
-                    self?.observations = observations
-                    DispatchQueue.main.async {
-                        self?.tableViewOfInformation.reloadData()
-                    }
-                } else {
-                    print("No observations found.")
-                }
-            case .failure(let error):
-                print("Error fetching species counts:", error)
-            }
+extension SpecieViewController: SpecieViewModelDelegate {
+    func didFetchData() {
+        DispatchQueue.main.async {
+            self.updateUI()
         }
     }
 }

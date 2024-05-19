@@ -16,7 +16,6 @@
 		035340002BF9881700DF924D /* AirQualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03533FFF2BF9881700DF924D /* AirQualityViewController.swift */; };
 		035340022BF9882300DF924D /* AirQualityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340012BF9882300DF924D /* AirQualityViewModel.swift */; };
 		035340052BF9885200DF924D /* PopulationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340042BF9885200DF924D /* PopulationModel.swift */; };
-		035340072BF9886400DF924D /* PopulationNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340062BF9886400DF924D /* PopulationNetworkService.swift */; };
 		035340092BF9886E00DF924D /* PopulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340082BF9886E00DF924D /* PopulationViewController.swift */; };
 		0353400B2BF9887600DF924D /* PopulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353400A2BF9887600DF924D /* PopulationViewModel.swift */; };
 		0353400E2BF9889E00DF924D /* CustomCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353400D2BF9889E00DF924D /* CustomCardCell.swift */; };
@@ -26,7 +25,6 @@
 		035340162BF988D100DF924D /* SolarResourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340152BF988D100DF924D /* SolarResourceModel.swift */; };
 		035340182BF988DC00DF924D /* SolarModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340172BF988DC00DF924D /* SolarModelViewController.swift */; };
 		0353401A2BF988E500DF924D /* SolarResourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340192BF988E500DF924D /* SolarResourceViewModel.swift */; };
-		0353401C2BF9890200DF924D /* ExtensionOfImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353401B2BF9890200DF924D /* ExtensionOfImage.swift */; };
 		035340202BF9892B00DF924D /* SpecieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353401F2BF9892B00DF924D /* SpecieViewController.swift */; };
 		035340222BF9893400DF924D /* SpecieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340212BF9893400DF924D /* SpecieViewModel.swift */; };
 		035340262BF9896800DF924D /* SpecieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035340252BF9896800DF924D /* SpecieTableViewCell.swift */; };
@@ -47,6 +45,7 @@
 		0353404D2BF9A38B00DF924D /* CustomLongLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353404C2BF9A38B00DF924D /* CustomLongLayoutView.swift */; };
 		78E439F42BF996C800E0D36C /* AirQualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E439F32BF996C800E0D36C /* AirQualityModel.swift */; };
 		78E439F62BF996ED00E0D36C /* TextResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E439F52BF996ED00E0D36C /* TextResources.swift */; };
+		BAAA575F2BF9AFAE00FC0864 /* SpecieViewController+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAA575E2BF9AFAE00FC0864 /* SpecieViewController+TableViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +60,6 @@
 		03533FFF2BF9881700DF924D /* AirQualityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityViewController.swift; sourceTree = "<group>"; };
 		035340012BF9882300DF924D /* AirQualityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityViewModel.swift; sourceTree = "<group>"; };
 		035340042BF9885200DF924D /* PopulationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationModel.swift; sourceTree = "<group>"; };
-		035340062BF9886400DF924D /* PopulationNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationNetworkService.swift; sourceTree = "<group>"; };
 		035340082BF9886E00DF924D /* PopulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationViewController.swift; sourceTree = "<group>"; };
 		0353400A2BF9887600DF924D /* PopulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationViewModel.swift; sourceTree = "<group>"; };
 		0353400D2BF9889E00DF924D /* CustomCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardCell.swift; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 		035340152BF988D100DF924D /* SolarResourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarResourceModel.swift; sourceTree = "<group>"; };
 		035340172BF988DC00DF924D /* SolarModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarModelViewController.swift; sourceTree = "<group>"; };
 		035340192BF988E500DF924D /* SolarResourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarResourceViewModel.swift; sourceTree = "<group>"; };
-		0353401B2BF9890200DF924D /* ExtensionOfImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionOfImage.swift; sourceTree = "<group>"; };
 		0353401F2BF9892B00DF924D /* SpecieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecieViewController.swift; sourceTree = "<group>"; };
 		035340212BF9893400DF924D /* SpecieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecieViewModel.swift; sourceTree = "<group>"; };
 		035340252BF9896800DF924D /* SpecieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecieTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +88,7 @@
 		0353404C2BF9A38B00DF924D /* CustomLongLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLongLayoutView.swift; sourceTree = "<group>"; };
 		78E439F32BF996C800E0D36C /* AirQualityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityModel.swift; sourceTree = "<group>"; };
 		78E439F52BF996ED00E0D36C /* TextResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextResources.swift; sourceTree = "<group>"; };
+		BAAA575E2BF9AFAE00FC0864 /* SpecieViewController+TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpecieViewController+TableViewExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +210,6 @@
 			children = (
 				0353404B2BF9A34C00DF924D /* PopulationCustomView */,
 				035340042BF9885200DF924D /* PopulationModel.swift */,
-				035340062BF9886400DF924D /* PopulationNetworkService.swift */,
 				035340082BF9886E00DF924D /* PopulationViewController.swift */,
 				0353400A2BF9887600DF924D /* PopulationViewModel.swift */,
 			);
@@ -235,10 +232,10 @@
 		03533FFD2BF9875B00DF924D /* Specie */ = {
 			isa = PBXGroup;
 			children = (
+				BAAA575D2BF9AF9800FC0864 /* Extensions */,
 				035340242BF9893E00DF924D /* SpecieCell */,
 				035340232BF9893800DF924D /* Model */,
 				0353401F2BF9892B00DF924D /* SpecieViewController.swift */,
-				0353401B2BF9890200DF924D /* ExtensionOfImage.swift */,
 				035340212BF9893400DF924D /* SpecieViewModel.swift */,
 			);
 			path = Specie;
@@ -360,6 +357,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		BAAA575D2BF9AF9800FC0864 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BAAA575E2BF9AFAE00FC0864 /* SpecieViewController+TableViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -459,7 +464,7 @@
 				035340422BF98A4900DF924D /* LocationWeatherModel.swift in Sources */,
 				035340282BF9897400DF924D /* Model.swift in Sources */,
 				035340182BF988DC00DF924D /* SolarModelViewController.swift in Sources */,
-				0353401C2BF9890200DF924D /* ExtensionOfImage.swift in Sources */,
+				BAAA575F2BF9AFAE00FC0864 /* SpecieViewController+TableViewExtension.swift in Sources */,
 				0353403E2BF98A3000DF924D /* WindView.swift in Sources */,
 				0353400B2BF9887600DF924D /* PopulationViewModel.swift in Sources */,
 				035340092BF9886E00DF924D /* PopulationViewController.swift in Sources */,
@@ -470,7 +475,6 @@
 				035340102BF988A700DF924D /* CustomCardModel.swift in Sources */,
 				035340342BF989E800DF924D /* UiImageViewExtension.swift in Sources */,
 				78E439F62BF996ED00E0D36C /* TextResources.swift in Sources */,
-				035340072BF9886400DF924D /* PopulationNetworkService.swift in Sources */,
 				0353403A2BF98A1C00DF924D /* InfoView.swift in Sources */,
 				035340142BF988C800DF924D /* SolarResourceData.swift in Sources */,
 			);

@@ -137,18 +137,15 @@ class SolarResourceViewController: UIViewController {
     }
     
     func styleTextField(_ textfield: UITextField, placeholder: String) {
-        textfield.placeholder = placeholder
-        textfield.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [
-            .font: UIFont(name: "FiraGO-Medium", size: 12) ?? UIFont.systemFont(ofSize: 12, weight: .medium)
-        ])
+        textfield.placeholder = "Enter US Address"
         textfield.textColor = .label
         textfield.backgroundColor = .systemBackground
         textfield.layer.borderColor = UIColor.placeholderText.cgColor
-        textfield.layer.borderWidth = 1.0
-        textfield.layer.cornerRadius = 9
-        textfield.borderStyle = .roundedRect
+        textfield.layer.cornerRadius = 10
         textfield.translatesAutoresizingMaskIntoConstraints = false
         textfield.heightAnchor.constraint(equalToConstant: 45).isActive = true
+        textfield.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 14, height: textfield.frame.height))
+        textfield.leftViewMode = .always
     }
     
     func setupCollectionView() {

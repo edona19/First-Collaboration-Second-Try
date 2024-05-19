@@ -38,9 +38,8 @@ class InfoView: UIView {
     
     private func setupUIView() {
         backgroundColor = .systemBackground
-//        layer.borderWidth = 1
         layer.borderColor = UIColor.systemGray2.cgColor
-        layer.cornerRadius = 6
+        layer.cornerRadius = 10
         layer.masksToBounds = true
         heightAnchor.constraint(equalToConstant: 80).isActive = true
     }
